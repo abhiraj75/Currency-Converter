@@ -1,66 +1,45 @@
-💱 Currency Converter (Python CLI)
+# 💱 Currency Converter (Python CLI)
 
-A command-line currency converter built with Python that fetches real-time exchange rates using FreeCurrencyAPI. The project securely manages API keys using environment variables and follows best practices for clean code structure.
+A command-line currency converter built with Python that fetches real-time exchange rates using FreeCurrencyAPI. The project securely manages API keys using environment variables and follows best practices.
 
-🚀 Features
+---
 
-🌍 Supports 30+ global currencies
+## 🚀 Features
 
-🔄 Real-time exchange rates
+- 🌍 Supports 30+ international currencies
+- 🔄 Real-time exchange rates
+- 🔐 Secure API key handling with `.env`
+- 💻 Simple CLI interface
+- ⚠️ Error handling for invalid input
 
-🔐 Secure API key management using .env
+---
 
-💻 Simple and clean CLI interface
+## 🛠️ Tech Stack
 
-⚠️ Basic error handling for invalid inputs
+- Python 3
+- requests
+- python-dotenv
+- FreeCurrencyAPI (REST API)
 
-🛠️ Tech Stack
+---
 
-Python 3
+# 📦 Installation (Manual Setup)
 
-requests
+Copy and run the following commands:
 
-python-dotenv
-
-REST API integration
-
-📦 Installation (Manual Setup)
-1️⃣ Clone the Repository
+```bash
+# 1️⃣ Clone the repository
 git clone https://github.com/your-username/currency-converter.git
 cd currency-converter
 
-2️⃣ Install Required Libraries
-pip install requests
-pip install python-dotenv
+# 2️⃣ Install required libraries
+pip install requests python-dotenv
 
-3️⃣ Setup Environment Variables
+# 3️⃣ Create .env file (Mac/Linux)
+echo "API_KEY=your_freecurrencyapi_key_here" > .env
 
-Create a .env file in the project root directory:
+# For Windows (PowerShell)
+# Set-Content -Path .env -Value "API_KEY=your_freecurrencyapi_key_here"
 
-API_KEY=your_freecurrencyapi_key_here
-
-
-⚠️ Make sure .env is added to your .gitignore file to prevent exposing your API key.
-
-4️⃣ Run the Program
+# 4️⃣ Run the program
 python main.py
-
-💻 Usage
-
-Enter the base currency (e.g., USD, INR, EUR)
-
-Enter the amount to convert
-
-View converted values
-
-Press q to quit the program
-
-Example
-Enter The Base Currency (q for quit): USD
-Enter The Amount You Want To Convert: 100
-
-Converted Amounts:
--------------------------
-EUR: 92.45
-INR: 8324.10
-JPY: 14823.55
