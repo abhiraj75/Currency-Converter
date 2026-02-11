@@ -1,6 +1,11 @@
 import requests
+from dotenv import load_dotenv
+import os
 
-API_KEY = "fca_live_oNSQfRamKggbFdoJvwwbSLCpW2wV8U4goQ0frr3g"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+
 BASE_URL = f"https://api.freecurrencyapi.com/v1/latest?apikey={API_KEY}"
 
 CURRENCIES = ["USD", "CAD", "EUR", "AUD", "CNY"]
