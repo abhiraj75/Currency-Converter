@@ -44,6 +44,8 @@ echo "API_KEY=your_freecurrencyapi_key_here" > .env
 # 4️⃣ Run the program
 python main.py
 
+```
+
 💻 Usage
 
 Enter the base currency (e.g., USD, INR, EUR)
@@ -55,7 +57,9 @@ View converted values
 Type q to quit
 
 🧪 Example
+
 ```bash
+
 Enter The Base Currency (q for quit): USD
 Enter The Amount You Want To Convert: 100
 
