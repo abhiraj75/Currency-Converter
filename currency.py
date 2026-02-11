@@ -37,6 +37,8 @@ while True:
     if amount == "Q":
         break
     try:
+        print("\nConverted Amounts:")
+        print("-" * 25)
         for ticker,value in data.items():
             print(f"{ticker}:{value*float(amount)}")
     except Exception:
