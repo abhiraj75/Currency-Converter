@@ -8,7 +8,10 @@ API_KEY = os.getenv("API_KEY")
 
 BASE_URL = f"https://api.freecurrencyapi.com/v1/latest?apikey={API_KEY}"
 
-CURRENCIES = ["USD", "CAD", "EUR", "AUD", "CNY"]
+CURRENCIES = ["EUR", "USD", "JPY", "BGN", "CZK", "DKK", "GBP", "HUF", "PLN", "RON",
+    "SEK", "CHF", "ISK", "NOK", "HRK", "RUB", "TRY", "AUD", "BRL", "CAD",
+    "CNY", "HKD", "IDR", "ILS", "INR", "KRW", "MXN", "MYR", "NZD", "PHP",
+    "SGD", "THB", "ZAR"]
 
 def convert_currency(base):
     currencies= ",".join(CURRENCIES)
